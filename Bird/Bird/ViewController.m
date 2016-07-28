@@ -4,6 +4,8 @@
 
 #import "ViewController.h"
 
+#import "BirdUserMessageManager.h"
+
 @interface ViewController ()
 
 @end
@@ -12,6 +14,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[BirdUserMessageManager sharedManager] userLogin:@"15889731562" :@"5244"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
